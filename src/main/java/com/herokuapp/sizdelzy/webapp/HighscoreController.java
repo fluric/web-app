@@ -20,11 +20,11 @@ public class HighscoreController {
 
     @GetMapping("/highscore")
     public List<Highscore> getHighscoreEntries() {
-        return highscoreService.getAllHighscoreEntries();
+        return highscoreService.getAllHighscores();
     }
 
     @PostMapping("/highscore")
     public Long addHighscoreEntry(@RequestBody Highscore highscore) {
-        return highscoreService.addHighscoreEntry(highscore);
+        return highscoreService.addHighscore(highscore);
     }
 }

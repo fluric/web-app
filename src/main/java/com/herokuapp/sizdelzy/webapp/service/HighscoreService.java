@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface HighscoreService {
 
-    List<Highscore> getAllHighscoreEntries();
+    List<Highscore> getAllHighscores();
 
-    Long addHighscoreEntry(Highscore highscore);
+    Long addHighscore(Highscore highscore);
 }

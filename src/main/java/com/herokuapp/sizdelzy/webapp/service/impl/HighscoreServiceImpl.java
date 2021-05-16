@@ -17,12 +17,12 @@ public class HighscoreServiceImpl implements HighscoreService {
     }
 
     @Override
-    public List<Highscore> getAllHighscoreEntries() {
+    public List<Highscore> getAllHighscores() {
         return highscoreEntryRepository.findAll();
     }
 
     @Override
-    public Long addHighscoreEntry(Highscore highscore) {
+    public Long addHighscore(Highscore highscore) {
         return highscoreEntryRepository.save(highscore).getId();
     }
 }
