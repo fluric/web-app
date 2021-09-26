@@ -8,36 +8,36 @@ import javax.persistence.Id;
 @Entity
 public class Highscore {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String name;
-    private Long score;
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private Long id;
+  private String name;
+  private Long score;
 
-    protected Highscore() {
-    }
+  protected Highscore() {
+  }
 
-    public Highscore(String name, Long score) {
-        this.name = name;
-        this.score = score;
-    }
+  public Highscore(String name, Long score) {
+    this.name = name;
+    this.score = score;
+  }
 
-    @Override
-    public String toString() {
-        return String.format(
-                "HighscoreEntry[id=%d, name='%s', score='%d']",
-                id, name, score);
-    }
+  @Override
+  public String toString() {
+    return String.format(
+      "HighscoreEntry[id=%d, name='%s', score='%d']",
+      id, name, score);
+  }
 
-    public Long getId() {
-        return id;
-    }
+  public Long getId() {
+    return id;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public Long getScore() {
-        return score;
-    }
+  public Long getScore() {
+    return score;
+  }
 }
